@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react';
 import './HomePage.scss';
 import Header from '../../components/Header/Header';
+import Button from '../../components/Button/Button';
 
 interface HomeProps { }
 
@@ -25,20 +26,26 @@ class HomePage extends PureComponent<HomeProps, HomeState> {
                 />
 
                 <div className="HomeContainer">
+                    <p className="HomeContainer_Title">Url Section</p>
                     <div className="HomeContainer_UrlSection">
-                        Url Section
+                        <input type="text" className="UrlInput" onBlur={() => {}}/>
+                        <Button
+                            label="Fetch URL"
+                            className="Button"
+                            action={() => {}}
+                        />
                     </div>
 
+                    <p className="HomeContainer_Title">Option Section</p>
                     <div className="HomeContainer_OptionSection">
-                        Option Section
                     </div>
 
+                    <p className="HomeContainer_Title">Site Support Section</p>
                     <div className="HomeContainer_SiteSupportSection">
-                        Site Support Section
                     </div>
 
+                    <p className="HomeContainer_Title">Analytics Section</p>
                     <div className="HomeContainer_AnalyticsSection">
-                        Analytics Section
                     </div>
                 </div>
             </div>
