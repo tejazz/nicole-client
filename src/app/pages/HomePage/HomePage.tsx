@@ -4,13 +4,25 @@ import Header from '../../components/Header/Header';
 
 interface HomeProps { }
 
-interface HomeState { }
+interface HomeState {
+    currentRoute: string;
+}
 
 class HomePage extends PureComponent<HomeProps, HomeState> {
+    constructor(props: HomeProps) {
+        super(props);
+
+        this.state = {
+            currentRoute: "Home"
+        }
+    }
+
     render() {
         return (
             <div className="HomePage">
-                <Header />
+                <Header
+                    currentRoute={this.state.currentRoute}
+                />
 
                 <div className="HomeContainer">
                     <div className="HomeContainer_UrlSection">

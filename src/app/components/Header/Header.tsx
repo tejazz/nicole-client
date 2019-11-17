@@ -5,7 +5,12 @@ import AboutIcon from '../../../assets/images/about.svg';
 import SignoutIcon from '../../../assets/images/signout.svg';
 import ListIcon from '../../../assets/images/list.svg';
 
-const Header: StatelessComponent<{}> = () => {
+interface HeaderProps {
+    currentRoute: string;
+}
+
+const Header: StatelessComponent<HeaderProps> = ({currentRoute}) => {
+
     return (
         <div className="Header">
             <p className="Header_Logo">NICOLE</p>
@@ -13,15 +18,15 @@ const Header: StatelessComponent<{}> = () => {
             <div className="Header_Navigation">
                 <img
                     src={ListIcon}
-                    className="IconImg"
+                    className={`IconImg ${(currentRoute === 'List' ? "IconImg--Active" : "")}`} 
                 />
                 <img
                     src={ProfileIcon}
-                    className="IconImg"
+                    className={`IconImg ${(currentRoute === 'Profile' ? "IconImg--Active" : "")}`} 
                 />
                 <img
                     src={AboutIcon}
-                    className="IconImg"
+                    className={`IconImg ${(currentRoute === 'About' ? "IconImg--Active" : "")}`} 
                 />
                 <img
                     src={SignoutIcon}

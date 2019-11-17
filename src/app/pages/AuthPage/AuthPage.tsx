@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react';
 import './AuthPage.scss';
+import Button from '../../components/Button/Button';
 
 interface AuthProps {
 
@@ -30,8 +31,16 @@ class AuthPage extends PureComponent<AuthProps, AuthState> {
             </div>
 
             <div className="AuthContainer_Button">
-                <button className="Button">Sign In</button>
-                <button className="Button Button--Inactive" onClick={() => this.setState({ login: false })}>Sign Up</button>
+                <Button
+                    label="Sign In"
+                    className="Button"
+                    action={() => {}}
+                />
+                <Button
+                    label="Sign Up"
+                    className="Button Button--Inactive"
+                    action={() => this.setState({ login: false })}
+                />
             </div>
 
             <div className="AuthContainer_Forgot">
@@ -49,7 +58,11 @@ class AuthPage extends PureComponent<AuthProps, AuthState> {
                 </div>
 
                 <div className="AuthContainer_Button">
-                    <button className="Button">Sign Up</button>
+                    <Button
+                        label="Sign Up"
+                        className="Button"
+                        action={() => {}}
+                    />
                 </div>
 
                 <div className="AuthContainer_Forgot">
