@@ -33,12 +33,12 @@ class AuthPage extends PureComponent<AuthProps, AuthState> {
             <div className="AuthContainer_Button">
                 <Button
                     label="Sign In"
-                    className="Button"
+                    componentClass="Button"
                     action={() => {}}
                 />
                 <Button
                     label="Sign Up"
-                    className="Button Button--Inactive"
+                    componentClass="Button Button--Inactive"
                     action={() => this.setState({ login: false })}
                 />
             </div>
@@ -60,7 +60,7 @@ class AuthPage extends PureComponent<AuthProps, AuthState> {
                 <div className="AuthContainer_Button">
                     <Button
                         label="Sign Up"
-                        className="Button"
+                        componentClass="Button"
                         action={() => {}}
                     />
                 </div>

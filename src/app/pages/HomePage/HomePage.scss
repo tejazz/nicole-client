@@ -1,0 +1,87 @@
+.HomeContainer {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+
+  @media screen and (max-width: 590px) {
+    display: block;
+  }
+}
+
+.TrackSection,
+.DetailSection {
+  width: 50%;
+
+  @media screen and (max-width: 590px) {
+    width: 100%;
+  }
+}
+
+.UrlSection,
+.ProductSection,
+.OptionSection,
+.AnalyticsSection,
+.SiteSupportSection {
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 6px;
+  box-shadow: 1px 3px 8px #888888;
+}
+
+.CardTitle {
+  text-align: center;
+  font-weight: 700;
+}
+
+.CardCaption {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.UrlInput {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  padding: 10px;
+  border: 1px solid black;
+  font-size: 1rem;
+}
+
+.UrlButton {
+  display: block;
+  width: fit-content;
+  margin: 20px auto;
+}
+
+.Sites {
+    width: fit-content;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+
+    &_Icon {
+        width: 60px;
+        margin: 0 10px;
+    }
+}
+
+.Options {
+    display: flex;
+    justify-content: center;
+}
+
+.SelectOption {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    cursor: pointer;
+
+    &_Icon {
+        width: 30px;
+        margin-left: 8px;
+    }
+}

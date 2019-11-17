@@ -3,17 +3,18 @@ import './Button.scss';
 
 interface ButtonProps {
     label: string;
-    className: string;
+    componentClass: string;
+    customClass?: string;
     action: Function;
 }
 
-const Button: StatelessComponent<ButtonProps> = (props: ButtonProps) => {
+const Button: StatelessComponent<ButtonProps> = ({componentClass, customClass, action, label}) => {
     return (
         <button
-            className={props.className}
-            onClick={() => props.action()}
+            className={`${customClass} ${componentClass}`}
+            onClick={() => action()}
         >
-            {props.label}
+            {label}
         </button>
     );
 };
