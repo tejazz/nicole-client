@@ -19,6 +19,10 @@ class AuthPage extends PureComponent<AuthProps, AuthState> {
     }
 
     render() {
+        const Logo = (<div className="AuthContainer_Logo">
+            <h2 className="Logo">Nicole</h2>
+        </div>);
+
         const Login = (<div className="Login">
             <div className="AuthContainer_Input">
                 <input className="Input" type="text" onBlur={() => { }} placeholder="Username/Email" />
@@ -57,10 +61,7 @@ class AuthPage extends PureComponent<AuthProps, AuthState> {
         return (
             <div className="AuthPage">
                 <div className="AuthContainer">
-                    <div className="AuthContainer_Logo">
-                        <h2 className="Logo">Nicole</h2>
-                    </div>
-
+                    {Logo}
                     {this.state.login ? Login : Signup}
                 </div>
             </div>
