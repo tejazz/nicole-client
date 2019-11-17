@@ -23,18 +23,18 @@ class AuthPage extends PureComponent<AuthProps, AuthState> {
             <div className="AuthPage">
                 <div className="Login">
                     <div className="AuthContainer">
-                        <div className="Logo">
-                            Nicole
+                        <div className="AuthContainer_Logo">
+                            <h2 className="Logo">Nicole</h2>
                         </div>
 
                         <div className="AuthContainer_Input">
-                            <input className="Input" type="text" onBlur={() => { }} />
-                            <input className="Input" type="password" onBlur={() => { }} />
+                            <input className="Input" type="text" onBlur={() => { }} placeholder="Username/Email" />
+                            <input className="Input" type="password" onBlur={() => { }} placeholder="Password" />
                         </div>
 
                         <div className="AuthContainer_Button">
                             <button className="Button">Sign In</button>
-                            <button className="Button">Sign Up</button>
+                            <button className="Button Button--Inactive">Sign Up</button>
                         </div>
 
                         <div className="AuthContainer_Forgot">

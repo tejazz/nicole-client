@@ -1,0 +1,70 @@
+.AuthPage {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url('../../../assets/images/main-background.jpg');
+    background-size: contain;
+}
+
+.Login {
+}
+
+.AuthContainer {
+    background-color: #ffffff;
+    min-width: 360px;
+    padding: 10px;
+    box-shadow: -1px 2px 55px #888888;
+
+    &_Logo {
+        text-align: center;
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    &_Input {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    &_Button {
+        width: fit-content;
+        margin: 0 auto;
+    }
+}
+
+.Input {
+    width: 95%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 2.5%;
+    border: 1px solid black;
+    font-size: 1rem;
+}
+
+.Logo {
+    margin: 0;
+}
+
+.Link {
+    text-align: center;
+}
+
+.Button {
+    font-family: Lemonade;
+    padding: 6px 12px;
+    background: black;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    margin: 0 5px;
+    border: 1px solid black;
+
+    &--Inactive {
+        color: black;
+        background: white;
+    }
+}
+
