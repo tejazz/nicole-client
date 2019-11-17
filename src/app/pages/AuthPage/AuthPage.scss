@@ -16,6 +16,7 @@
     min-width: 360px;
     padding: 10px;
     box-shadow: -1px 2px 55px #888888;
+    transition: all .2s;
 
     &_Logo {
         text-align: center;
@@ -50,6 +51,7 @@
 
 .Link {
     text-align: center;
+    cursor: pointer;
 }
 
 .Button {
@@ -61,10 +63,21 @@
     border: none;
     margin: 0 5px;
     border: 1px solid black;
+    cursor: pointer;
+
+    &:hover {
+        color: black;
+        background: white;
+    }
 
     &--Inactive {
         color: black;
         background: white;
+
+        &:hover {
+            background: black;
+            color: white;
+        }
     }
 }
 
