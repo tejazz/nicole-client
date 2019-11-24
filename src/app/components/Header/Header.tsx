@@ -25,14 +25,17 @@ const Header: StatelessComponent<HeaderProps> = ({currentRoute, history}) => {
                 <img
                     src={ProfileIcon}
                     className={`IconImg ${(currentRoute === 'Profile' ? "IconImg--Active" : "")}`} 
+                    onClick={() => history.push('/profile')}
                 />
                 <img
                     src={AboutIcon}
                     className={`IconImg ${(currentRoute === 'About' ? "IconImg--Active" : "")}`} 
+                    onClick={() => history.push('/about')}
                 />
                 <img
                     src={SignoutIcon}
                     className="IconImg"
+                    onClick={() => history.push('/auth')}
                 />
             </div>
         </div>

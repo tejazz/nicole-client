@@ -6,6 +6,7 @@ import ProductListPage from './app/pages/ProductListPage/ProductListPage';
 import SingleProductPage from './app/pages/SingleProductPage/SingleProductPage';
 import AboutPage from './app/pages/AboutPage/AboutPage';
 import ProfilePage from './app/pages/ProfilePage/ProfilePage';
+import AdminPage from './app/pages/AdminPage/AdminPage';
 
 export const Routes = () => (
     <Switch>
@@ -15,6 +16,7 @@ export const Routes = () => (
         <Route path="/about" component={AboutPage} />
         <Route path="/profile" component={ProfilePage} />
         <Route path="/auth" component={AuthPage} />
+        <Route path="/admin" component={AdminPage} />
         <Redirect from="/**" to="/" />
     </Switch>
 );
