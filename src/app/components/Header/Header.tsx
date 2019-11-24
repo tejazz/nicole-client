@@ -4,13 +4,14 @@ import ProfileIcon from '../../../assets/images/profile.svg';
 import AboutIcon from '../../../assets/images/about.svg';
 import SignoutIcon from '../../../assets/images/signout.svg';
 import ListIcon from '../../../assets/images/list.svg';
+import { RouteComponentProps, RouterProps, RouteProps } from 'react-router';
 
 interface HeaderProps {
     currentRoute: string;
+    history: any;   // to-do: define proper types
 }
 
-const Header: StatelessComponent<HeaderProps> = ({currentRoute}) => {
-
+const Header: StatelessComponent<HeaderProps> = ({currentRoute, history}) => {
     return (
         <div className="Header">
             <p className="Header_Logo">NICOLE</p>
@@ -19,6 +20,7 @@ const Header: StatelessComponent<HeaderProps> = ({currentRoute}) => {
                 <img
                     src={ListIcon}
                     className={`IconImg ${(currentRoute === 'List' ? "IconImg--Active" : "")}`} 
+                    onClick={() => history.push('/products')}
                 />
                 <img
                     src={ProfileIcon}

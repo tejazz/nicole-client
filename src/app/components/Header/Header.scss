@@ -1,9 +1,16 @@
+@import '../../../styles/abstracts.scss';
+
 .Header {
-    width: 100%;
+    width: 100%; 
     display: flex;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 2px 5px 5px #888888;
+    box-shadow: 2px 5px 5px $color-border;
+    height: 60px;
+
+    @media screen and (max-width: 590px) {
+        width: 102%;
+    }
 
     &_Logo {
         margin: 0;
@@ -14,15 +21,16 @@
     &_Navigation {
         display: flex;
         margin-right: 10px;
+        height: 60px;
     }
 }
 
 .IconImg {
     width: 30px;
-    padding: 7px 20px;
-    border-bottom: 2px solid white;
+    padding: 12px 20px;
+    border-bottom: 2px solid $color-white;
 
     &:hover, &--Active {
-        border-bottom: 2px solid black;
+        border-bottom: 2px solid $color-primary;
     }
 }

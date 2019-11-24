@@ -1,26 +1,28 @@
+@import '../../../styles/abstracts.scss';
+
 .Button {
-    font-family: Lemonade;
+    font-family: 'Patrick';
     padding: 6px 12px;
-    background: black;
-    color: white;
+    background: $color-primary;
+    color: $color-white;
     font-size: 1rem;
     border: none;
     margin: 0 5px;
-    border: 1px solid black;
+    border: 1px solid $color-primary;
     cursor: pointer;
 
     &:hover {
-        color: black;
-        background: white;
+        color: $color-primary;
+        background: $color-white;
     }
 
     &--Inactive {
-        color: black;
-        background: white;
+        color: $color-primary;
+        background: $color-white;
 
         &:hover {
-            background: black;
-            color: white;
+            background: $color-primary;
+            color: $color-white;
         }
     }
 }

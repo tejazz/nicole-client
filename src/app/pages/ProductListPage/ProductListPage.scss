@@ -1,0 +1,77 @@
+@import '../../../styles/abstracts.scss';
+
+.ProductsListPage {
+    @media screen and (max-width: 590px) {
+        overflow-x: hidden;
+    }
+}
+
+.ProductsListContainer {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+
+    @media screen and (max-width: 590px) {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .FilterSection {
+        width: 20%;
+        min-height: calc(100vh - 60px);
+        overflow-y: scroll;
+        border-right: 1px solid $color-border;
+        box-shadow: 2px 2px 5px $color-border;
+        padding: 20px;
+
+        @media screen and (max-width: 590px) {
+            width: 100%;
+            min-height: fit-content;
+        }
+
+        &_Input {
+            margin: 0 auto;
+            display: block;
+            width: 90%;
+            padding: 10px;
+            border: 1px solid $color-primary;
+            font-size: 1rem;
+        }
+
+        &_Switches {
+            margin-top: 30px;
+
+            &--Show {
+                display: block;
+            }
+
+            &--Hide {
+                display: block;
+                
+                @media screen and (max-width: 590px) {
+                    display: none;
+                }
+            }
+
+            .SiteSwitch, .PriceSwitch {
+                margin-bottom: 30px;
+
+                &_Label {
+                    margin: 0;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+
+    .ListSection {
+        width: 80%;
+        min-height: calc(100vh - 60px);
+        overflow-y: scroll;
+        padding: 20px;
+        
+        @media screen and (max-width: 590px) {
+            width: 100%;
+        }
+    }
+}

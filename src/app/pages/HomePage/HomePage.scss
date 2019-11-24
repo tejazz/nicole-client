@@ -1,7 +1,10 @@
+@import '../../../styles/abstracts.scss';
+
 .HomeContainer {
   width: 100%;
   min-height: 100vh;
   display: flex;
+  margin-bottom: 40px;
 
   @media screen and (max-width: 590px) {
     display: block;
@@ -27,7 +30,15 @@
   margin: 0 auto;
   margin-top: 20px;
   padding: 6px;
-  box-shadow: 1px 3px 8px #888888;
+  box-shadow: 1px 3px 8px $color-border;
+}
+
+.ProductSection {
+    @media screen and (min-width: 590px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .CardTitle {
@@ -36,10 +47,10 @@
 }
 
 .CardCaption {
-    width: 80%;
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 20px;
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 .UrlInput {
@@ -47,41 +58,104 @@
   margin: 0 auto;
   width: 80%;
   padding: 10px;
-  border: 1px solid black;
+  border: 1px solid $color-primary;
   font-size: 1rem;
 }
 
-.UrlButton {
+.HomeButton {
   display: block;
   width: fit-content;
   margin: 20px auto;
 }
 
 .Sites {
-    width: fit-content;
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 20px;
+  width: fit-content;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
 
-    &_Icon {
-        width: 60px;
-        margin: 0 10px;
-    }
+  &_Icon {
+    width: 60px;
+    margin: 0 10px;
+  }
 }
 
 .Options {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .SelectOption {
-    display: flex;
-    align-items: center;
-    margin-right: 30px;
-    cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+  cursor: pointer;
 
-    &_Icon {
-        width: 30px;
-        margin-left: 8px;
+  &_Label {
+    margin: 0;
+  }
+
+  &_Icon {
+    width: 30px;
+    margin-left: 8px;
+  }
+}
+
+.OptionSection {
+  &_Input {
+    display: block;
+    margin: 15px auto;
+    width: 30%;
+    padding: 10px;
+    border: 1px solid $color-primary;
+    font-size: 1rem;
+  }
+}
+
+.ProductCard {
+  display: flex;
+  width: 100%;
+  padding: 15px;
+  padding-top: 0;
+  align-items: flex-start;
+
+  @media screen and (min-width: 600px) {
+      width: 80%;
+      justify-content: center;
+  }
+}
+
+.ProductImage {
+  width: 120px;
+  height: 100%;
+  margin-right: 15px;
+}
+
+.ProductDetails {
+  &_Label {
+    margin: 8px;
+    font-weight: 400;
+
+    &--Secondary {
+      font-weight: 500;
+    }
+
+    &--Primary {
+      font-size: 2rem;
+      font-weight: 700;
+    }
+  }
+
+  &_Price {
+    display: flex;
+    align-items: flex-end;
+  }
+}
+
+.AnalyticsSection {
+    &_Graph {
+        text-align: center;
+        margin: 0 auto;
+        display: block;
     }
 }

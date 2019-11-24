@@ -1,0 +1,89 @@
+@import '../../../styles/abstracts.scss';
+
+.ProductListCard {
+    border: 1px solid $color-border;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    box-shadow: 1px 1px 5px $color-border;
+    position: relative;
+    margin-bottom: 45px;
+
+    &_Image {
+        width: 150px;
+        height: 100%;
+        // border-right: 1px solid $color-border;
+
+        & > .ImageItem {
+            object-fit: cover;
+            width: 100%;
+        }
+    }
+
+    &_Details {
+        width: 100%;
+        margin-left: 20px;
+        padding-left: 5px;
+        margin-top: 20px;
+
+        & > .ProductLabel {
+            margin: 0;
+
+            &--Title {
+                font-weight: 700;
+            }
+
+            &--Site {
+                opacity: 0.5;
+            }
+
+            &--Date {
+
+                & > .ProductLabel--DateValue {
+                    opacity: 0.5;
+                }
+            }
+
+            &--PriceTag {
+                display: flex;
+                justify-content: flex-end;
+                align-items: flex-end;
+                margin-right: 10px;
+
+                & > .GrowthTrend {
+                    margin: 0;
+                    margin-right: 8px;
+                    color: $color-white;
+                    background: $color-border;
+                    padding: 2px 8px;
+                    border-radius: 10px;
+                    margin-bottom: 3px;
+
+                    &--Positive {
+                        background: green;
+                    }
+
+                    &--Negative {
+                        background: red;
+                    }
+                }
+
+                & > .CurrencyTag {
+                    margin: 0;
+                }
+
+                & > .CurrencyValue {
+                    margin: 0;
+                    font-size: 2rem;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+
+    &_Actions {
+        position: absolute;
+        bottom: -36px;
+        right: 0;
+    }
+}
