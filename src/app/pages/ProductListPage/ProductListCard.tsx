@@ -6,7 +6,7 @@ import './ProductListCard.scss';
 export const ProductListCard: StatelessComponent<{}> = () => {
     return (
         <div className="ProductListCard">
-            <div className="ProductListCard_Image">
+            <div className="ProductListCard__Image">
                 <img
                     src={DefaultProduct}
                     alt="default-product"
@@ -14,7 +14,7 @@ export const ProductListCard: StatelessComponent<{}> = () => {
                 />
             </div>
 
-            <div className="ProductListCard_Details">
+            <div className="ProductListCard__Details">
                 <p className="ProductLabel ProductLabel--Title">Product Title</p>
                 <p className="ProductLabel ProductLabel--Site">axxmaz.in</p>
                 <p className="ProductLabel ProductLabel--Date">Created on: <span className="ProductLabel--DateValue">2019-11-24 08:00:14</span></p>
@@ -26,7 +26,7 @@ export const ProductListCard: StatelessComponent<{}> = () => {
                 </div>
             </div>
 
-            <div className="ProductListCard_Actions">
+            <div className="ProductListCard__Actions">
                 <Button
                     label={"Purchase"}
                     componentClass="Button"

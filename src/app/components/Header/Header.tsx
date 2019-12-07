@@ -14,9 +14,9 @@ interface HeaderProps {
 const Header: StatelessComponent<HeaderProps> = ({currentRoute, history}) => {
     return (
         <div className="Header">
-            <p className="Header_Logo">NICOLE</p>
+            <p className="Header__Logo">NICOLE</p>
 
-            <div className="Header_Navigation">
+            <div className="Header__Navigation">
                 <img
                     src={ListIcon}
                     className={`IconImg ${(currentRoute === 'List' ? "IconImg--Active" : "")}`} 

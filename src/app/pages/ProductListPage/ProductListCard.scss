@@ -9,7 +9,7 @@
     position: relative;
     margin-bottom: 45px;
 
-    &_Image {
+    &__Image {
         width: 150px;
         height: 100%;
         // border-right: 1px solid $color-border;
@@ -20,7 +20,7 @@
         }
     }
 
-    &_Details {
+    &__Details {
         width: 100%;
         margin-left: 20px;
         padding-left: 5px;
@@ -81,7 +81,7 @@
         }
     }
 
-    &_Actions {
+    &__Actions {
         position: absolute;
         bottom: -36px;
         right: 0;

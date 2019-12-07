@@ -18,7 +18,7 @@ export const ToggleItem: StatelessComponent<ToggleItemProps> = (props) => {
         >
             <img
                 src={Select}
-                alt="select_icon"
+                alt="select__icon"
                 className={(props.FilterTypeValue) ? "SelectIcon" : "SelectIcon SelectIcon--Hide"}
             />
             <p className="SiteLabel">{props.Label}</p>

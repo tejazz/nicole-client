@@ -29,7 +29,7 @@
             min-height: fit-content;
         }
 
-        &_Input {
+        &__Input {
             margin: 0 auto;
             display: block;
             width: 90%;
@@ -38,7 +38,7 @@
             font-size: 1rem;
         }
 
-        &_Switches {
+        &__Switches {
             margin-top: 30px;
 
             &--Show {
@@ -56,7 +56,7 @@
             .SiteSwitch, .PriceSwitch {
                 margin-bottom: 30px;
 
-                &_Label {
+                &__Label {
                     margin: 0;
                     font-weight: 700;
                 }
