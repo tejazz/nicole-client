@@ -82,11 +82,11 @@ class HomePage extends PureComponent<HomeProps, HomeState> {
                                 />
 
                                 <div className="ProductDetails">
-                                    <p className="ProductDetails_Label">Default Product Name - Some Specification</p>
-                                    <p className="ProductDetails_Label ProductDetails_Label--Secondary">xxxwnb.com</p>
-                                    <div className="ProductDetails_Price">
-                                        <p className="ProductDetails_Label">RS</p>
-                                        <p className="ProductDetails_Label ProductDetails_Label--Primary">99,000</p>
+                                    <p className="ProductDetails__Label">Default Product Name - Some Specification</p>
+                                    <p className="ProductDetails__Label ProductDetails__Label--Secondary">xxxwnb.com</p>
+                                    <div className="ProductDetails__Price">
+                                        <p className="ProductDetails__Label">RS</p>
+                                        <p className="ProductDetails__Label ProductDetails__Label--Primary">99,000</p>
                                     </div>
                                 </div>
                             </div>
@@ -99,21 +99,21 @@ class HomePage extends PureComponent<HomeProps, HomeState> {
 
                             <div className="Options">
                                 <div className="SelectOption" onClick={() => this.setState({ isNotificationEnabled: !this.state.isNotificationEnabled })}>
-                                    <p className="SelectOption_Label">Notifications</p>
+                                    <p className="SelectOption__Label">Notifications</p>
                                     <img
                                         src={Select}
                                         alt="select"
-                                        className="SelectOption_Icon"
+                                        className="SelectOption__Icon"
                                         style={(!this.state.isNotificationEnabled) ? { opacity: 0.3 } : { opacity: 1 }}
                                     />
                                 </div>
 
                                 <div className="SelectOption" onClick={() => this.setState({ isBudgetRequired: !this.state.isBudgetRequired })}>
-                                    <p className="SelectOption_Label">Budget</p>
+                                    <p className="SelectOption__Label">Budget</p>
                                     <img
                                         src={Select}
                                         alt="select"
-                                        className="SelectOption_Icon"
+                                        className="SelectOption__Icon"
                                         style={(!this.state.isBudgetRequired) ? { opacity: 0.3 } : { opacity: 1 }}
                                     />
                                 </div>
@@ -122,7 +122,7 @@ class HomePage extends PureComponent<HomeProps, HomeState> {
                             {(this.state.isBudgetRequired) ? <input
                                 type="number"
                                 placeholder="RS. XXXX"
-                                className="OptionSection_Input"
+                                className="OptionSection__Input"
                                 onBlur={() => { }}
                             /> : null}
 
@@ -142,17 +142,17 @@ class HomePage extends PureComponent<HomeProps, HomeState> {
                                 <img
                                     src={FLPKT}
                                     alt="flpkt"
-                                    className="Sites_Icon"
+                                    className="Sites__Icon"
                                 />
                                 <img
                                     src={AMZIN}
                                     alt="amzin"
-                                    className="Sites_Icon"
+                                    className="Sites__Icon"
                                 />
                                 <img
                                     src={AMZGL}
                                     alt="amzgl"
-                                    className="Sites_Icon"
+                                    className="Sites__Icon"
                                 />
                             </div>
                         </div>
@@ -160,8 +160,8 @@ class HomePage extends PureComponent<HomeProps, HomeState> {
                         <div className="AnalyticsSection">
                             <p className="CardTitle">Peeping into your previous choices</p>
 
-                            <div className="AnalyticsSection_Graph">
-                                <p className="Graph_FallbackLabel">No data to show at present</p>
+                            <div className="AnalyticsSection__Graph">
+                                <p className="Graph__FallbackLabel">No data to show at present</p>
 
                                 {/* <BarChartComponent chartData={mockChartData}/> */}
                             </div>

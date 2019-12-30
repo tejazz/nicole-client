@@ -1,0 +1,45 @@
+@import "../../../styles/abstracts.scss";
+
+.AboutPage {
+  .AboutContainer {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    padding-bottom: 30px;
+    justify-content: space-evenly;
+    overflow-x: hidden;
+
+    @media screen and (max-width: 590px) {
+      display: block;
+      margin-top: 20px;
+    }
+
+    .AboutCard {
+      width: 40%;
+      box-shadow: 1px 3px 8px $color-border;
+      padding: 20px;
+
+      @media screen and (max-width: 590px) {
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+        margin-top: 20px;
+        padding: 6px;
+      }
+
+      &__Title {
+          font-weight: 700;
+          width: 90%;
+          margin: 0 auto;
+          padding-top: 20px;
+          padding-bottom: 15px;
+      }
+
+      &__Details {
+          width: 90%;
+          margin: 0 auto;
+          padding-bottom: 20px;
+      }
+    }
+  }
+}

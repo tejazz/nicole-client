@@ -116,7 +116,7 @@ class ProductListPage extends PureComponent<ProductListProps, ProductListState> 
                         <input
                             type="text"
                             placeholder="Find Your Product Here"
-                            className="FilterSection_Input"
+                            className="FilterSection__Input"
                             onChange={() => { }}
                         />
 
@@ -129,17 +129,17 @@ class ProductListPage extends PureComponent<ProductListProps, ProductListState> 
 
                         {/* multiple select allowed */}
                         <div
-                            className={`FilterSection_Switches ${(this.state.displayFilter) ? "FilterSection_Switches--Show" : "FilterSection_Switches--Hide"}`}
+                            className={`FilterSection__Switches ${(this.state.displayFilter) ? "FilterSection__Switches--Show" : "FilterSection__Switches--Hide"}`}
                         >
                             <div className="SiteSwitch">
-                                <p className="SiteSwitch_Label">Sites</p>
+                                <p className="SiteSwitch__Label">Sites</p>
 
                                 {renderSiteToggleItems}
                             </div>
 
                             {/* only single select allowed */}
                             <div className="PriceSwitch">
-                                <p className="PriceSwitch_Label">Price Range</p>
+                                <p className="PriceSwitch__Label">Price Range</p>
 
                                 {renderPriceToggleItems}
                             </div>

@@ -45,7 +45,7 @@ class SingleProductPage extends PureComponent<SingleProductProps, SingleProductS
 
                 <div className="SingleProductPageContainer">
                     <div className="ProductDetails">
-                        <div className="ProductDetails_Image">
+                        <div className="ProductDetails__Image">
                             <img
                                 src={DefaultProduct}
                                 alt="single-product"
@@ -53,23 +53,23 @@ class SingleProductPage extends PureComponent<SingleProductProps, SingleProductS
                             />
                         </div>
 
-                        <div className="ProductDetails_Info">
+                        <div className="ProductDetails__Info">
                             <div className="InfoLabel">
-                                <p className="InfoLabel_Title">Product Name</p>
+                                <p className="InfoLabel__Title">Product Name</p>
                             </div>
 
                             <div className="InfoLabel">
-                                <p className="InfoLabel_Title InfoLabel_Title--Secondary">amazon.in</p>
+                                <p className="InfoLabel__Title InfoLabel__Title--Secondary">amazon.in</p>
                             </div>
 
                             <div className="InfoLabel">
-                                <p className="InfoLabel_Title">Created on:</p>
-                                <p className="InfoLabel_Title InfoLabel_Title--Secondary">2019-11-25 12:00:00</p>
+                                <p className="InfoLabel__Title">Created on:</p>
+                                <p className="InfoLabel__Title InfoLabel__Title--Secondary">2019-11-25 12:00:00</p>
                             </div>
 
                             <div className="InfoLabel">
-                                <p className="InfoLabel_Title">Updated on:</p>
-                                <p className="InfoLabel_Title InfoLabel_Title--Secondary">2019-11-25 12:00:00</p>
+                                <p className="InfoLabel__Title">Updated on:</p>
+                                <p className="InfoLabel__Title InfoLabel__Title--Secondary">2019-11-25 12:00:00</p>
                             </div>
 
                             <div className="InfoLabel">
@@ -77,12 +77,12 @@ class SingleProductPage extends PureComponent<SingleProductProps, SingleProductS
                             </div>
 
                             <div className="InfoLabel">
-                                <p className="InfoLabel_Title">RS</p>
-                                <p className="InfoLabel_Title InfoLabel_Title--Price">99,000</p>
+                                <p className="InfoLabel__Title">RS</p>
+                                <p className="InfoLabel__Title InfoLabel__Title--Price">99,000</p>
                             </div>
 
                             <div className="InfoLabel">
-                                <p className="InfoLabel_Title InfoLabel_Title--Secondary InfoLabel_Title--Separation">The product has been showing promise, in terms of price drop, and might continue to show this trend in the coming time.</p>
+                                <p className="InfoLabel__Title InfoLabel__Title--Secondary InfoLabel__Title--Separation">The product has been showing promise, in terms of price drop, and might continue to show this trend in the coming time.</p>
                             </div>
 
                             <div className="ProductButtons">
@@ -102,9 +102,9 @@ class SingleProductPage extends PureComponent<SingleProductProps, SingleProductS
                     </div>
 
                     <div className="Statistics">
-                        <p className="Statistics_Title">Price Trend (RS)</p>
+                        <p className="Statistics__Title">Price Trend (RS)</p>
 
-                        <div className="Statistics_Graph">
+                        <div className="Statistics__Graph">
                             {(mockData.length > 0) ? (
                                 <ResponsiveContainer width="100%">
                                     <AreaChart height={500} data={mockData}
@@ -119,7 +119,7 @@ class SingleProductPage extends PureComponent<SingleProductProps, SingleProductS
                                     </AreaChart>
                                 </ResponsiveContainer>
                             ) : (
-                                    <p className="Statistics_DefaultMessage">No data records currently present</p>
+                                    <p className="Statistics__DefaultMessage">No data records currently present</p>
                                 )}
                         </div>
                     </div>
