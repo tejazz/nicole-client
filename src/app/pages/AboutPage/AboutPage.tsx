@@ -1,11 +1,23 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import './AboutPage.scss';
+import Header from '../../components/Header/Header';
 
-class AboutPage extends Component {
+interface AboutProps {
+    history: any;   // to-do: define proper types
+}
+
+class AboutPage extends PureComponent<AboutProps> {
     render() {
         return (
-            <div>
-                About Page
+            <div className="AboutPage">
+                <Header
+                    currentRoute="about"
+                    history={this.props.history}
+                />
+
+                <div className="AboutPageContainer">
+                    About Page
+                </div>
             </div>
         );
     }
