@@ -30,6 +30,7 @@
     width: 30px;
     padding: 12px 20px;
     border-bottom: 2px solid $color-white;
+    cursor: pointer;
 
     &:hover, &--Active {
         border-bottom: 2px solid $color-primary;

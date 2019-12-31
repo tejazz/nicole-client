@@ -1,0 +1,109 @@
+@import "../../../styles/abstracts.scss";
+
+@mixin CardDetails {
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+  padding: 6px;
+  padding-bottom: 20px;
+  box-shadow: 1px 3px 8px $color-border;
+  margin-top: -19px;
+}
+
+.ProfilePage {
+  .ProfileContainer {
+    display: flex;
+    padding: 20px 0;
+
+    @media screen and (max-width: 599px) {
+      display: block;
+    }
+
+    .ProfileAccount {
+      width: 50%;
+
+      @media screen and (max-width: 599px) {
+        width: 100%;
+      }
+
+      &__ImgContainer {
+        display: block;
+        margin: 0 auto;
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 12px;
+        padding: 8px;
+        width: fit-content;
+        margin-top: 10px;
+      }
+
+      &__Img {
+        width: 80px;
+        height: 80px;
+      }
+
+      .AccountDetails {
+        @include CardDetails;
+
+        &__Title {
+          font-weight: 700;
+          text-align: center;
+          padding-top: 10px;
+        }
+
+        .SingleText {
+          display: flex;
+          justify-content: center;
+
+          &__Label {
+            margin: 0;
+            font-weight: 700;
+            margin-right: 5px;
+          }
+
+          &__Value {
+            margin: 0;
+          }
+        }
+      }
+    }
+
+    .ProfileStatistics {
+      width: 50%;
+
+      @media screen and (max-width: 599px) {
+        width: 100%;
+        margin-top: 20px;
+      }
+
+      .StatisticsCard {
+        @include CardDetails;
+        margin-top: 10px;
+        padding: 6px;
+
+        &__Title {
+          font-weight: 700;
+          text-align: center;
+        }
+
+        &__NoProductsMessage {
+          text-align: center;
+          opacity: 0.6;
+        }
+
+        .TrackCard {
+            border-top: 1px solid $color-border;
+            padding: 30px;
+
+            &__ProductName, &__Bold {
+                font-weight: 600;
+            }
+
+            &__ProductName, &__GeneralCaption {
+                margin: 0;
+            }
+        }
+      }
+    }
+  }
+}

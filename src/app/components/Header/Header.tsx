@@ -4,7 +4,6 @@ import ProfileIcon from '../../../assets/images/profile.svg';
 import AboutIcon from '../../../assets/images/about.svg';
 import SignoutIcon from '../../../assets/images/signout.svg';
 import ListIcon from '../../../assets/images/list.svg';
-import { RouteComponentProps, RouterProps, RouteProps } from 'react-router';
 
 interface HeaderProps {
     currentRoute: string;
