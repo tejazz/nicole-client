@@ -1,4 +1,4 @@
-import React, { Component, FunctionComponent } from 'react';
+import React, { FunctionComponent } from 'react';
 import './AboutPage.scss';
 import Header from '../../components/Header/Header';
 
@@ -16,8 +16,8 @@ const AboutPage: FunctionComponent<AboutProps> = (props) => {
 
             <div className="AboutContainer">
                 <div className="AboutCard">
-                    <p>What is Nicole?</p>
-                    <p>
+                    <p className="AboutCard__Title">What is Nicole?</p>
+                    <p className="AboutCard__Details">
                         Have you ever seen a product on one of your beloved e-commerce paltforms and wondered if there was a simpler way you could track the price of that product and be notified about the price changes for free?
                         <br /><br />
                         Nicole is here to help you out. It is built for this very purpose. It will track, update and notify you on any changes - hassle-free.
@@ -31,7 +31,7 @@ const AboutPage: FunctionComponent<AboutProps> = (props) => {
                 </div>
 
                 <div className="AboutCard">
-                    <p>Learn More or Contribute</p>
+                    <p className="AboutCard__Title">Learn More or Contribute</p>
                 </div>
             </div>
         </div>
