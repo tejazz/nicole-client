@@ -14,7 +14,7 @@ interface HeaderProps {
 const Header: StatelessComponent<HeaderProps> = ({currentRoute, history}) => {
     return (
         <div className="Header">
-            <p className="Header__Logo">NICOLE</p>
+            <p className="Header__Logo" onClick={() => history.push('/')}>NICOLE</p>
 
             <div className="Header__Navigation">
                 <img
